@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Webpage Design</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+   
+</head>
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">HOSPITAL</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="#">SERVICE</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Type To text">
+                <a href="#"> <button class="btn">Search</button></a>
+            </div>
+
+        </div> 
+        <div class="content">
+            <h1>HOSPITAL <br><span>MANAGEMENT</span> <br>SYSTEM</h1>
+            <p class="par">Welcome to [Hospital Name], where advanced medical care meets compassionate service.<br>
+                 Our team of expert healthcare professionals is dedicated to providing comprehensive,<br> patient-centered care with state-of-the-art facilities. 
+                We are committed to improving lives through <br>innovation, empathy, and excellence in healthcare.</p>
+
+                <button class="cn"><a href="#">JOIN US</a></button>
+
+                <div class="form">
+                
+                    <button class="btnn"><a href="{% url 'login' %}">Login</a></button>
+                    <button class="btnn"><a href="{% url 'signup' %}">signup</a></button>
+                    
+
+                    <p class="link">Don't have an account<br>
+                    <a href="{% url 'signup' %}">Sign up </a> here</a></p>
+                    <p class="liw">Log in with</p>
+
+                    <div class="icons">
+                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+                    </div>
+
+                </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>
